@@ -8,12 +8,12 @@ import pandas as pd
 
 # Acessing the reddit api
 
-reddit = praw.Reddit(client_id="8gxHtQPY7gsjMA",#my client id
-                     client_secret="j6UHGlRmQ3Ze44uHaKpTthUGakY",
-                     user_agent="my user agent",
-                     username = "memebaes",
-                     password = "S@marth2002")
 
+reddit = praw.Reddit(client_id="",#my client id
+                     client_secret="",  #your client secret
+                     user_agent="my user agent", #user agent name
+                     username = "",     # your reddit username
+                     password = "")     # your reddit password
 
 sub = ['Askreddit']  # make a list of subreddits you want to scrape the data from
 
