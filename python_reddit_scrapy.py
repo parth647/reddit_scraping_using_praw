@@ -50,12 +50,12 @@ for s in sub:
         }
         for submission in subreddit.search(query,sort = "top",limit = 1):
             post_dict["title"].append(submission.title)
-            post_dict["score"].append(submission.title)
-            post_dict["id"].append(submission.title)
-            post_dict["url"].append(submission.title)
-            post_dict["comms_num"].append(submission.title)
-            post_dict["created"].append(submission.title)
-            post_dict["body"].append(submission.title)
+            post_dict["score"].append(submission.score)
+            post_dict["id"].append(submission.id)
+            post_dict["url"].append(submission.url)
+            post_dict["comms_num"].append(submission.num_comments)
+            post_dict["created"].append(submission.created)
+            post_dict["body"].append(submission.selftext)
             
             ##### Acessing comments on the post
             submission.comments.replace_more(limit = 1)
